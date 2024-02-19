@@ -1,0 +1,70 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/console.js"></script>
+    <title>>Ajout d'un habit</title>
+    <link rel="stylesheet" type="text/css" href="../css/mesStyles.css">
+</head>
+
+<body>
+    <form method="POST" name="f" action="../php/ajout.php">
+        <fieldset>
+            <legend>Ajout d'un habit</legend>
+            <table style="height:50%">
+                <tr>
+                    <td>Catégorie : </td>
+                    <td>
+                        <select name="categorie" id="1">
+                            <option value="0">Séléctionner une catégorie</option>
+                            <option value="1">Robe de soirée</option>
+                            <option value="2">Robe de mairiée</option>
+                            <option value="3">Caftan</option>
+                            <option value="4">Costume</option>
+                            <option value="5">Jebba</option>
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>Description : </td>
+                    <td>
+                        <input size="25" type="text" id="desc" name="description" value="" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Taille : </td>
+                    <td>
+                        <input type="radio" name="taille" value="S">
+                        <lable>S</lable>
+                        <input type="radio" name="taille" value="M">
+                        <lable>M</lable>
+                        <input type="radio" name="taille" value="L">
+                        <lable>L</lable>
+                        <input type="radio" name="taille" value="X">
+                        <lable>XL</lable>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Prix Location : </td>
+                    <td>
+                        <input size="25" type="number" name="prix" id="prixLoc" value="" required> DT
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="reset" value="Annuler">
+                        <input type="submit" onclick="return verif1()" value="Ajouter">
+                    </td>
+
+                </tr>
+            </table>
+        </fieldset>
+
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      ch = prompt("donner ch : ");
+      i = 0;
+      while (ch[i] == ch[Math.trunc(ch.length / 2) - i - 1] && i < ch.length) {
+        i += 1;
+      }
+      if (i == Math.trunc(ch.length / 2)) {
+        alert("palindrome");
+      } else {
+        alert("n'est palindrome");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="controle.js"></script>
+  </head>
+  <body onload="getyr()">
+    <fieldset name="Group1">
+      <legend>Ajout d'un spectacle</legend>
+      <form name="f">
+      <select name="select1">
+        <option>Choisir une piece</option>
+        <option>Le tresor</option>
+        <option>Le peche du succes</option>
+        <option>Le gardien</option>
+        <option>Les soldats de la lune</option>
+      </select>
+
+      <select name="select2">
+        <option>Choisir une salle</option>
+        <option>Theatre municipal</option>
+        <option>Qatrieme Art</option>
+        <option>L'etoile du Nord</option>
+        <option>Espace Artisto</option>
+      </select>
+      <input type="text" name="jj"/><span>/</span><input type="text" name="mm"/><span>/</span
+      ><input type="text" id="annee" name="aaaa" /><span>(JJ/MM/AAAA)</span>
+      <br />
+      <input type="reset" value="annuler" />
+      <input type="submit" value="ajouter" onclick="ctrl()" />
+    </fieldset>
+  </form>
+  </body>
+</html>

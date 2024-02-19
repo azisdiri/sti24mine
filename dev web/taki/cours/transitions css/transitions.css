@@ -1,0 +1,11 @@
+div{
+  width: 200px;
+  height: 200px;
+  background: rgb(255, 60, 60);
+  text-align: center;
+  transition-duration: 2s;
+  transition-timing-function: ease-out ;
+}
+div:hover{
+  background: rgb(42, 165, 155);
+}

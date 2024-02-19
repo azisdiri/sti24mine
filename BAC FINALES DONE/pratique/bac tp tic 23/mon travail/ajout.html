@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Document</title>
+    <link rel="stylesheet" href="mesStyles.css" />
+  </head>
+
+  <body>
+    <fieldset>
+      <legend>Ajout d'un habit</legend>
+      <form name="f1" method="post" action="ajout.php">
+        <label>Categorie</label>
+        <select name="Select1" id="cat">
+          <option>selectionner une categorie</option>
+          <option value="1">Robe de soiree</option>
+          <option value="2">Robe de mariee</option>
+          <option value="3">Caftan</option>
+          <option value="4">Costume</option>
+          <option value="5">Jebba</option>
+        </select>
+        <br />
+        <label>Description</label>
+        <input type="text" id="des" />
+        <br />
+        <label>Taille</label>
+        <input name="Radio1" type="radio" id="s" value="S" />
+        <label>S</label>
+        <input name="Radio1" type="radio" id="m" value="M" />
+        <label>M</label>
+        <input name="Radio1" type="radio" id="l" value="L" />
+        <label>L</label>
+        <input name="Radio1" type="radio" id="xl" value="X" />
+        <label>XL</label>
+        <br />
+        <label>Prix de location</label>
+        <input type="number" id="prix_loc" /><span>DT</span>
+        <br />
+        <input type="reset" value="Annuler" />
+        <input type="submit" value="Ajouter" onclick="verif1()" />
+        <script src="controles.js"></script>
+      </form>
+    </fieldset>
+  </body>
+</html>

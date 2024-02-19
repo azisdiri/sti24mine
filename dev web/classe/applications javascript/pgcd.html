@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      a = prompt("donner a");
+      b = prompt("donner b");
+      a = Number(a);
+      b = Number(b);
+      while (a != b) {
+        if (a > b) {
+          a = a - b;
+        } else {
+          b = b - a;
+        }
+      }
+      alert("le pgcd est : " + a);
+    </script>
+  </body>
+</html>

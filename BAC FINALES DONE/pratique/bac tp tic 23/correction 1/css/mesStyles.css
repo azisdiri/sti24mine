@@ -1,0 +1,15 @@
+#prixLoc, #desc {
+    color: blue;
+}
+
+input[name=prix],input[name=description]  {
+    border-color: blue ;
+}
+
+
+#cin, #code, #duree{
+    color: blue;
+}
+input[name=cin],input[name=code], input[name=duree]  {
+    border-color: blue ;
+}

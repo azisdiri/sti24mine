@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label>nom et prenom : </label>
+      <input
+        type="text"
+        id="np"
+        onfocus="message('sasisissez votre nom et prenom')"
+        onblur="message('...')"
+        oninput="transformer()"
+      />
+      <br />
+      <label>nbr carac tapes : </label>
+      <input type="number" value="0" readonly />
+      <br />
+      <label>etat</label>
+      <input type="text" id="etat" readonly />
+      <br />
+      <input type="submit" value="valider" />
+    </form>
+    <script src="evnmt.js"></script>
+  </body>
+</html>

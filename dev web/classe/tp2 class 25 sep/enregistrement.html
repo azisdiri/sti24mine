@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Document</title>
+    <script src="controle.js"></script>
+  </head>
+
+  <body>
+    <form>
+      <fieldset name="Enregistrement d'un testeur">
+        <legend>Enregistrement d'un testeur</legend>
+        <label>N° Permis: </label>
+        <input type="text" id="permis" />
+        <br />
+        <label>Noms: </label>
+        <input type="text" id="nom" />
+        <br />
+        <label>Prenom: </label>
+        <input type="text" id="prenom" />
+        <br />
+        <label>Genre : </label>
+        <input type="radio" name="genre" id="femme" />
+        <label for="fem">Feminin</label>
+        <input type="radio" name="genre" id="homme" />
+        <label for="mas">Masculin</label>
+        <br />
+        <input name="Reset1" type="reset" value="Annuler" />
+        <input
+          name="Submit1"
+          type="submit"
+          value="Ajouter"
+          onclick="verifier()"
+        />
+      </fieldset>
+    </form>
+  </body>
+</html>

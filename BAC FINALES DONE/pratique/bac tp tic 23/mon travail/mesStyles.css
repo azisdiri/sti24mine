@@ -1,0 +1,33 @@
+nav,
+iframe {
+  float: left;
+  height: 450px;
+}
+iframe {
+  width: 70%;
+}
+nav {
+  border: 1px solid black;
+  width: 29%;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+a:visited {
+  color: red;
+}
+
+#des,
+#prix_loc,
+#habit,
+#cin,
+#duree {
+  color: blue;
+  border-color: blue;
+}
+input {
+  margin: 5px;
+}

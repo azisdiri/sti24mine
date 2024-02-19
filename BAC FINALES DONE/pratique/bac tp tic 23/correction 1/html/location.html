@@ -1,0 +1,50 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/console.js"></script>
+    <title>>Location d'un habit</title>
+    <link rel="stylesheet" type="text/css" href="../css/mesStyles.css">
+</head>
+
+<body>
+    <form method="POST" name="f" action="../php/location.php">
+        <fieldset>
+            <legend>Location d'un habit</legend>
+            <table style="height:50%">
+        
+                <tr>
+                    <td>Code habit : </td>
+                    <td>
+                        <input size="25" type="text" id="code" name="code" value="" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cin client : </td>
+                    <td>
+                        <input size="25" type="text" id="cin" name="cin" value="" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Durée location : </td>
+                    <td>
+                        <input size="25" type="text" id="duree" name="duree" value="" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="reset" value="Annuler">
+                        <input type="submit" onclick="return verif2()" value="Louer">
+                    </td>
+
+                </tr>
+            </table>
+        </fieldset>
+
+
+    </form>
+</body>
+
+</html>
